@@ -31,4 +31,11 @@ mosquitto_pub -t iew.efy:sensehat -m '{ "temperature": 23, "humidity": 58, "pres
 * [Updating data on Thing : REST APIs](REST-APIs-PUT-Data.md)
 * [Retrieving data from Thing : REST APIs](REST-APIs-GET-Data.md)
 
+## TODO / Further Work
+* Exploring Live, Twin channels
+* Extract data from Thing periodically (MQTT Subscribe/HTTP SSE Events/Web Socket Stream)
+* Extract historical data 
+* Data Visualization (Node-RED/ThingsBoard)
+* [Messages](https://eclipse.dev/ditto/basic-messages.html)
+
 
