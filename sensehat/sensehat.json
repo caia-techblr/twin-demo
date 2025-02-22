@@ -1,0 +1,25 @@
+{
+    "policyId": "ditto.iew:policy",
+    "definition": "org.iew:efydemo:0.1.0",
+    "attributes": {
+        "name": "EFY Sensor Demo",
+        "type": "SenseHAT Addon for RaspberryPi"
+    },
+    "features": {
+        "temperature": {
+            "properties": {
+                "value": 0
+            }
+        },
+        "humidity": {
+            "properties": {
+                "value": 0
+            }
+        },
+        "pressure": {
+            "properties": {
+                "value": 0
+            }
+        }
+    }
+}
