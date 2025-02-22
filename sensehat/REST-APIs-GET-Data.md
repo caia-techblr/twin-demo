@@ -6,26 +6,26 @@ curl -X 'GET'   'http://localhost:8080/api/2/things/iew.efy:sensehat/attributes'
 ```
 ```
 curl -X 'GET' \
-  'http://localhost:8080/api/2/things/iew.efy%3Asensehat/features' \
+  'http://localhost:8080/api/2/things/iew.efy:sensehat/features' \
   -H 'accept: application/json' \
   -H 'Authorization: Basic ZGl0dG86ZGl0dG8=' | python3 -m json.tool
 ```
 ```
 curl -X 'GET' \
-  'http://localhost:8080/api/2/things/iew.efy%3Asensehat/features/temperature' \
+  'http://localhost:8080/api/2/things/iew.efy:sensehat/features/temperature' \
   -H 'accept: application/json' \
   -H 'Authorization: Basic ZGl0dG86ZGl0dG8=' | python3 -m json.tool
 ```
 ```    
 curl -X 'GET' \
-  'http://localhost:8080/api/2/things/iew.efy%3Asensehat/features/temperature/properties' \
+  'http://localhost:8080/api/2/things/iew.efy:sensehat/features/temperature/properties' \
   -H 'accept: application/json' \
   -H 'Authorization: Basic ZGl0dG86ZGl0dG8=' | python3 -m json.tool
 ```
 ```  
 curl -X 'GET'   'http://localhost:8080/api/2/things/iew.efy:sensehat/definition' -H 'accept:application/json'   -H 'Authorization: Basic ZGl0dG86ZGl0dG8=' | python3 -m json.tool
 ```
-```
+
 curl -X 'GET'   'http://localhost:8080/api/2/things/iew.efy:sensehat/policyId' -H 'accept:application/json'   -H 'Authorization: Basic ZGl0dG86ZGl0dG8=' | python3 -m json.tool
 ```
 
