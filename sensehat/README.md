@@ -31,6 +31,11 @@ mosquitto_pub -t iew.efy:sensehat -m '{ "temperature": 23, "humidity": 58, "pres
 * [Updating data on Thing : REST APIs](REST-APIs-PUT-Data.md)
 * [Retrieving data from Thing : REST APIs](REST-APIs-GET-Data.md)
 
+### Listen to SSE Events
+```
+curl -N --http2 -H "Accept:text/event-stream" 'http://localhost:8080/api/2/things/iew.efy:sensehat/features/temperature' -H 'accept:application/json' -u 'ditto:ditto'
+```
+
 ## TODO / Further Work
 * Exploring Live, Twin channels
 * Extract data from Thing periodically (MQTT Subscribe/HTTP SSE Events/Web Socket Stream)
