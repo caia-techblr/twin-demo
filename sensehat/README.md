@@ -33,7 +33,7 @@ mosquitto_pub -t iew.efy:sensehat -m '{ "temperature": 23, "humidity": 58, "pres
 
 ### Listen to SSE Events
 ```
-curl -N --http2 -H "Accept:text/event-stream" 'http://localhost:8080/api/2/things/iew.efy:sensehat/features/temperature' -H 'accept:application/json' -u 'ditto:ditto'
+curl -N --http2 -H "Accept:text/event-stream" 'http://localhost:8080/api/2/things/iew.efy:sensehat/features/temperature' -u 'ditto:ditto' # -H 'accept:application/json'
 ```
 
 ## TODO / Further Work
