@@ -68,3 +68,10 @@ curl -N --http2 -H "Accept:text/event-stream" http://localhost:8080/api/2/things
 ```
 curl -X POST   --url http://localhost:8080/api/2/things/iew.efy:smartkitchen/inbox/messages/ovencmd?timeout=0   -H 'content-type: text/plain'   -H 'Authorization: Basic ZGl0dG86ZGl0dG8='   -d 'Stop the timer'
 ```
+```
+curl -N --http2 -H "Accept:text/event-stream" http://localhost:8080/api/2/things/iew.efy:smartkitchen/outbox/messages -u 'ditto:ditto'
+```
+```
+curl --request POST   --url http://localhost:8080/api/2/things/iew.efy:smartkitchen/outbox/messages/inform?timeout=0   --header 'correlation-id: an-unique-string-for-this-message'   --header 'content-type: text/plain'   --header 'Authorization: Basic ZGl0dG86ZGl0dG8='   --data 'No one used me for half an hour now. I am going to shutdown soon.'
+```
+
