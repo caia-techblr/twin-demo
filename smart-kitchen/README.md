@@ -66,5 +66,5 @@ mosquitto_sub -t iew.efy.notifications/#
 curl -N --http2 -H "Accept:text/event-stream" http://localhost:8080/api/2/things/iew.efy:smartkitchen/inbox/messages -u 'ditto:ditto'
 ```
 ```
-curl -X POST   --url http://localhost:8080/api/2/things/iew.efy:smartkitchen/inbox/messages/oven?timeout=0   -H 'content-type: text/plain'   -H 'Authorization: Basic ZGl0dG86ZGl0dG8='   -d 'Stop the timer'
+curl -X POST   --url http://localhost:8080/api/2/things/iew.efy:smartkitchen/inbox/messages/ovencmd?timeout=0   -H 'content-type: text/plain'   -H 'Authorization: Basic ZGl0dG86ZGl0dG8='   -d 'Stop the timer'
 ```
