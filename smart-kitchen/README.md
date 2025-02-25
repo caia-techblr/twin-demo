@@ -52,8 +52,8 @@ curl -X 'PUT' \
   -H 'Content-Type: application/json' \
   -d '{ 
     "refrigerator": { "properties": { "status" : "off", "temperature": 8, "defrost" : 5 } },
-    "oven" : { "properties" : { "temperature" : 72, "status":"on"},
-    "room" : { "properties" : { "temperature" : 28, "light":"on"} }
+    "oven" : { "properties" : { "temperature" : 72, "status":"on"}},
+    "room" : { "properties" : { "temperature" : 28, "light":"on"}}
   }'
 
 ```
