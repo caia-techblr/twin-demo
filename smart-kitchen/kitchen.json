@@ -1,0 +1,29 @@
+{
+    "policyId": "ditto.iew:policy",
+    "definition": "org.iew:efydemo:0.1.0",
+    "attributes": {
+        "name": "Smart Kitchen Demo",
+        "type": "SenseHAT Addon for RaspberryPi"
+    },
+    "features": {
+        "refrigerator": {
+            "properties": {
+                "status": "on",
+                "temperature" : 0,
+                "defrost" : 0
+            }
+        },
+        "oven" : {
+            "properties" : {
+                "status" : "off",
+                "temperature" : 0,
+                "timer" : 0
+            }
+        }
+        "kitchen" : {
+            "properties" : {
+                "temperature" : 0
+            }
+        }
+    }
+}
