@@ -52,6 +52,7 @@ curl -X 'PUT' \
   -H 'Content-Type: application/json' \
   -d '{ 
     "refrigerator": { "properties": { "status" : "off", "temperature": 8, "defrost" : 5 } },
+    "oven" : { "properties" : { "temperature" : 72, "status":"on"},
     "room" : { "properties" : { "temperature" : 28, "light":"on"} }
   }'
 
@@ -61,3 +62,9 @@ mosquitto_sub -t iew.efy.notifications/#
 
 ```
 ## Demo3 : Inbox, Outbox commands
+```
+curl -N --http2 -H "Accept:text/event-stream" http://localhost:8080/api/2/things/iew.efy:smartkitchen/inbox/messages -u 'ditto:ditto'
+```
+```
+curl -X POST   --url http://localhost:8080/api/2/things/iew.efy:smartkitchen/inbox/messages/oven?timeout=0   -H 'content-type: text/plain'   -H 'Authorization: Basic ZGl0dG86ZGl0dG8='   -d 'Stop the timer'
+```
